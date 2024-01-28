@@ -1,0 +1,94 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: inherit;
+}
+
+html {
+    font-size: 100%;
+    font-family: var(--font-primary);
+}
+
+:root {
+    --font-primary: "Nunito Sans", sans-serif;
+    --font-accent: "Merriweather", sans-serif;
+
+    --font-size-extra-small: clamp(.75rem, .8vw, 1rem);
+    --font-size-small: clamp(1rem, 1vw, 1.15rem);
+    --font-size-regular: clamp(1.15rem, 1.5vw, 1.5rem);
+    --font-size-medium: clamp(1.5rem, 2.25vw, 2.25rem);
+    --font-size-large: clamp(2.25rem, 3.375vw, 3.375rem);
+    --font-size-extra-large: clamp(3.375rem, 5.82vw, 3.88125rem);
+
+    --color-background: #060c09;
+    --color-text: #ffffff;
+
+    --color-primary-100: #718efe;
+    --color-primary-200: #597bfe;
+    --color-primary-300: #4169fd;
+    --color-primary-400: #2a56fd;
+    --color-primary-500: #1243FD;
+    --color-primary-600: #103ce4;
+    --color-primary-700: #0e36ca;
+    --color-primary-800: #0d2fb1;
+    --color-primary-900: #0b2898;
+
+    --color-secondary-100: #ffa585;
+    --color-secondary-200: #ff9670;
+    --color-secondary-300: #ff875c;
+    --color-secondary-400: #ff7847;
+    --color-secondary-500: #ff6933;
+    --color-secondary-600: #e65f2e;
+    --color-secondary-700: #cc5429;
+    --color-secondary-800: #b34a24;
+    --color-secondary-900: #993f1f;
+}
+
+.article {
+    background: royalblue;
+}
+
+.article *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.article__heading {
+    font-family: var(--font-accent);
+    font-size: var(--font-size-large);
+    font-weight: 800;
+}
+
+.article__subheading {
+    font-family: var(--font-accent);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+}
+
+.article__text {
+    font-size: var(--font-size-regular);
+    font-size: 400;
+}
+
+.article__image {
+    width: 50%;
+    height: auto;
+    margin-inline: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.article__image--left {
+
+}
+
+.article__image--right {
+
+}
+
+/* Container Style */
+.container {
+    width: calc(100% - 4rem);
+    margin-inline: auto;
+}
