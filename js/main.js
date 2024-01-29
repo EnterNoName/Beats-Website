@@ -1,8 +1,5 @@
-const topSection = document.querySelector('.top')
 const heroSection = document.querySelector('.hero')
-const originSection = document.querySelector('.origins')
-const trendsSection = document.querySelector('.trends')
-const navCloseButton = document.querySelector('.nav__button')
+const navCloseButton = document.querySelector('.header__menu')
 const header = document.querySelector('.header')
 
 let isHeaderOpen = false;
@@ -10,8 +7,20 @@ let isHeaderOpen = false;
 navCloseButton && navCloseButton.addEventListener('click', e => {
     e.preventDefault()
     if (navCloseButton && header) {
-        header.querySelector('.nav').classList.toggle("open")
+        header.querySelector('.header__nav').classList.toggle("open")
         isHeaderOpen = !isHeaderOpen
+
+        if (isHeaderOpen) {
+            navCloseButton.innerHTML = `
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>`
+        } else {
+            navCloseButton.innerHTML = `
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" />
+            </svg>`
+        }
     }
 })
 
@@ -20,22 +29,12 @@ document.addEventListener('scroll', (e) => {
 })
 
 const updateStates = () => {
-    if (heroSection && document.scrollingElement.scrollTop > (heroSection.clientHeight * 0.5 - header.clientHeight * 2)) {
+    if (heroSection && document.scrollingElement.scrollTop > (heroSection.clientHeight / 2 - header.clientHeight)) {
         header.classList.add("show")
+        
     } else {
         header.classList.remove("show")
-    }
-
-    if (topSection && document.scrollingElement.scrollTop > (topSection.offsetTop * .8)) {
-        topSection.classList.add("animate")
-    }
-
-    if (originSection && document.scrollingElement.scrollTop > (originSection.offsetTop * .5)) {
-        originSection.classList.add("animate")
-    }
-
-    if (trendsSection && document.scrollingElement.scrollTop > (trendsSection.offsetTop * .5)) {
-        trendsSection.classList.add("animate")
+        
     }
 }
 

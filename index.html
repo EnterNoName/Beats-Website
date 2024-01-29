@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The History of Beatmaking</title>
+    <title>История битмейкинга</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/index.css">
@@ -14,43 +14,46 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav header__nav">
-                <button class="nav__button button button_icon">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="black"/>
-                    </svg>
-                </button>
-                <div class="nav__logo logo">
+            <div class="header__inner">
+                <div class="logo header__logo">
                     <img src="assets/logo.svg" class="logo__image" alt="">
                     <span class="logo__text">Beatmaking</span>
                 </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link link nav__link_selected">Истоки</a></li>
-                    <li class="nav__item"><a href="software.html" class="nav__link link">Современное ПО</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
-                    <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
-                    <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских продюсеров</a></li>
-                    <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
-                </ul>
-            </nav>
+                <button class="header__menu button--primary button">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" />
+                    </svg>
+                </button>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link link nav__link--selected">Истоки</a></li>
+                        <li class="nav__item"><a href="software.html" class="nav__link link">Современное ПО</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
+                        <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
+                        <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских продюсеров</a></li>
+                        <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container hero__inner">
-                <h1 class="hero__heading">История <br>битмейкинга</h1>
-                <nav class="nav hero__nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link link nav__link_selected">Истоки</a>
-                        </li>
-                        <li class="nav__item"><a href="software.html" class="nav__link link">Современное ПО</a></li>
-                        <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
-                        <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
-                        <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских
-                                продюсеров</a></li>
-                        <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
-                    </ul>
-                </nav>
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__heading">История<br> битмейкинга</h1>
+                    <nav class="nav hero__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html" class="nav__link link nav__link--selected">Истоки</a></li>
+                            <li class="nav__item"><a href="software.html" class="nav__link link">Современное ПО</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
+                            <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных<br> продюсеров</a></li>
+                            <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских<br> продюсеров</a></li>
+                            <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </section>
         <section class="origins">
@@ -64,7 +67,10 @@
                         многие пробуют себя в этом направлении. Однако здесь не все так просто, как может показаться со
                         стороны.</p>
                     <h3 class="article__subheading">Как зародился битмейкинг?</h3>
-                    <img src="assets/rap-concert.jpg" alt="" class="article__image">
+                    <figure class="article__image image article__image--right">
+                        <img src="assets/beatmakers/koolherc.webp" alt="" class="image__element">
+                        <figcaption class="image__caption">Диджей Kool Herc</figcaption>
+                    </figure>
                     <p class="article__text">Профессия зародилась в субкультуре хип-хопа в середине 70-х годов прошлого
                         столетия. Развивалась в Нью-Йорке на основе эмсиинга, одной из форм рифмованной лирики,
                         диджеинга, брейкинга и граффити. Сначала треки хип-хоп создавались на виниловых проигрывателях
@@ -86,7 +92,40 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <h2 class="footer__heading">Contact us on our socials!</h2>
+                <div class="footer__copyright">
+                    Copyright &copy; 2024 <a class="link" href="https://github.com/MichaelRayven">Michael Ray</a> and <a class="link" href="https://www.youtube.com/@winded_drop_dat">Windedberet</a>. All rights reserved.
+                </div>
+                <div class="footer__socials">
+                    <div class="socials__inner">
+                        <div class="socials__item">
+                            <h3 class="socials__person">Windedberet</h3>
+                            <p class="socials__position">Sound Producer</p>
+                            <h4 class="socials__heading">Socials:</h4>
+                            <ul class="socials__list">
+                                <li><a class="link" href="https://t.me/@windedberet"><img src="assets/icons/icon-telegram.svg" class="icon" alt="">Telegram</a></li>
+                                <li><a class="link" href="https://vk.com/windedberet_beats"><img src="assets/icons/icon-vk.svg" class="icon" alt="">Vkontakte</a></li>
+                                <li><a class="link align-center" href="https://vk.com/windedberet_beats"><img src="assets/icons/icon-youtube.svg" class="icon" alt="">YouTube</a></li>
+                            </ul>
+                        </div>
+                        <div class="socials__item">
+                            <h3 class="socials__person">Michael Rayven</h3>
+                            <p class="socials__position">Web Developer</p>
+                            <h4 class="socials__heading">Socials:</h4>
+                            <ul class="socials__list">
+                                <li><a class="link" href="https://t.me/@theitsastels"><img src="assets/icons/icon-telegram.svg" class="icon" alt="">Telegram</a></li>
+                                <li><a class="link" href="https://github.com/MichaelRayven"><img src="assets/icons/icon-github.svg" class="icon" alt="">Github</a></li>
+                                <li><a class="link" href="mailto:themikerayven@gmail.com?subject=Email from Beatmaking.com"><img src="assets/icons/icon-gmail.svg" class="icon" alt="">Gmail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

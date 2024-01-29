@@ -4,73 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The History of Beatmaking</title>
+    <title>История битмейкинга</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <script defer src="js/main.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav header__nav">
-                <button class="nav__button button button_icon">
-                    <img src="https://dummyimage.com/48x48/fff/000" class="icon" alt="">
-                </button>
-                <div class="nav__logo logo">
-                    <img src="https://dummyimage.com/48x48/fff/000" class="logo__image" alt="">
+            <div class="header__inner">
+                <div class="logo header__logo">
+                    <img src="assets/logo.svg" class="logo__image" alt="">
                     <span class="logo__text">Beatmaking</span>
                 </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link link ">Истоки</a></li>
-                    <li class="nav__item"><a href="software.html" class="nav__link link nav__link_selected">Современное ПО</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
-                    <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
-                    <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских продюсеров</a></li>
-                    <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
-                </ul>
-            </nav>
+                <button class="header__menu button--primary button">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" />
+                    </svg>
+                </button>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link link">Истоки</a></li>
+                        <li class="nav__item"><a href="software.html" class="nav__link link nav__link--selected">Современное ПО</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
+                        <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
+                        <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских продюсеров</a></li>
+                        <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="container hero__inner">
-                <h1 class="hero__heading">История <br>битмейкинга</h1>
-                <nav class="nav hero__nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link link ">Истоки</a></li>
-                    <li class="nav__item"><a href="software.html" class="nav__link link nav__link_selected">Современное ПО</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
-                    <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
-                    <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских продюсеров</a></li>
-                    <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
-                    </ul>
-                </nav>
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__heading">История<br> битмейкинга</h1>
+                    <nav class="nav hero__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html" class="nav__link link">Истоки</a></li>
+                            <li class="nav__item"><a href="software.html" class="nav__link link nav__link--selected">Современное ПО</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
+                            <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных<br> продюсеров</a></li>
+                            <li class="nav__item"><a href="russian_top.html" class="nav__link link">Топ русских<br> продюсеров</a></li>
+                            <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </section>
         <section class="software">
             <div class="container">
-                <h2 class="software__heading">Современное ПО</h2>
+                <article class="article">
+                    <h2 class="article__heading">Сэмплирование</h2>
+                    <p class="article__text">Семпл — относительно небольшой оцифрованный звуковой фрагмент. В качестве семпла чаще выступает звук акустического инструмента (например, рояля Steinway, литавр, флейты и тому подобных), но также и звуки электромузыкальных инструментов. Электронный музыкальный инструмент, в основе которого лежат семплы, называется сэмплером.</p>
+                    <h3 class="article__subheading">Современное ПО</h3>
+                    <p class="article__text">Список распространенных программ, с помощью которых создается музыка из сэмплов:</p>
+                </article>
                 <div class="list">
-                    <div class="list__item item">
+                    <div class="item">
                         <h3 class="item__heading">FL Studio</h3>
                         <div class="item__inner">
                             <img src="assets/software/flstudio.png" alt="" class="item__image">
                             <p class="item__text">Цифровая станция для создания музыки с дружелюбным интерфейсом и минимальными системными требованиями. Проста в использовании — пользователь выбирает звуки, настраивает порядок их звучания, запускает трек.</p>
                         </div>
                     </div>
-                    <div class="list__item item">
+                    <div class="item">
                         <h3 class="item__heading">Ableton Live</h3>
                         <div class="item__inner">
-                            <img src="https://cdn0.youla.io/files/images/780_780/5f/d1/5fd1d9d2a585a81c18409ff0-1.jpg" alt="" class="item__image">
+                            <img src="assets/software/ableton.jpg" alt="" class="item__image">
                             <p class="item__text">Отличается практичной автоматизацией, предлагает инструменты для импровизации. Подходит для написания музыки в условиях студии и для живых выступлений.</p>
                         </div>
                     </div>
-                    <div class="list__item item">
+                    <div class="item">
                         <h3 class="item__heading">Logic Pro</h3>
                         <div class="item__inner">
-                            <img src="https://cdn.jim-nielsen.com/macos/1024/logic-pro-2020-12-10.png" alt="" class="item__image">
+                            <img src="assets/software/logic-pro.png" alt="" class="item__image">
                             <p class="item__text">Обеспечивает доступ к 20 тысячам лупов (повторяющихся музыкальных отрывков). Предусмотрены широкие возможности редактирования аудио, есть функция коррекции вокала. Импортный софт лицензирован и стоит довольно дорого. Перед его приобретением рекомендуется внимательно рассмотреть функционал каждой программы. В этом помогут тематические статьи, отзывы и видеообзоры, а также пробные периоды, которые предлагают разработчики софта.</p>
                         </div>
                     </div>
@@ -78,7 +90,40 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <h2 class="footer__heading">Contact us on our socials!</h2>
+                <div class="footer__copyright">
+                    Copyright &copy; 2024 <a class="link" href="https://github.com/MichaelRayven">Michael Ray</a> and <a class="link" href="https://www.youtube.com/@winded_drop_dat">Windedberet</a>. All rights reserved.
+                </div>
+                <div class="footer__socials">
+                    <div class="socials__inner">
+                        <div class="socials__item">
+                            <h3 class="socials__person">Windedberet</h3>
+                            <p class="socials__position">Sound Producer</p>
+                            <h4 class="socials__heading">Socials:</h4>
+                            <ul class="socials__list">
+                                <li><a class="link" href="https://t.me/@windedberet"><img src="assets/icons/icon-telegram.svg" class="icon" alt="">Telegram</a></li>
+                                <li><a class="link" href="https://vk.com/windedberet_beats"><img src="assets/icons/icon-vk.svg" class="icon" alt="">Vkontakte</a></li>
+                                <li><a class="link align-center" href="https://vk.com/windedberet_beats"><img src="assets/icons/icon-youtube.svg" class="icon" alt="">YouTube</a></li>
+                            </ul>
+                        </div>
+                        <div class="socials__item">
+                            <h3 class="socials__person">Michael Rayven</h3>
+                            <p class="socials__position">Web Developer</p>
+                            <h4 class="socials__heading">Socials:</h4>
+                            <ul class="socials__list">
+                                <li><a class="link" href="https://t.me/@theitsastels"><img src="assets/icons/icon-telegram.svg" class="icon" alt="">Telegram</a></li>
+                                <li><a class="link" href="https://github.com/MichaelRayven"><img src="assets/icons/icon-github.svg" class="icon" alt="">Github</a></li>
+                                <li><a class="link" href="mailto:themikerayven@gmail.com?subject=Email from Beatmaking.com"><img src="assets/icons/icon-gmail.svg" class="icon" alt="">Gmail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,82 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The History of Beatmaking</title>
+    <title>История битмейкинга</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/top.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav header__nav">
-                <button class="nav__button button button_icon">
-                    <img src="https://dummyimage.com/48x48/fff/000" class="icon" alt="">
-                </button>
-                <div class="nav__logo logo">
-                    <img src="https://dummyimage.com/48x48/fff/000" class="logo__image" alt="">
+            <div class="header__inner">
+                <div class="logo header__logo">
+                    <img src="assets/logo.svg" class="logo__image" alt="">
                     <span class="logo__text">Beatmaking</span>
                 </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link link">Истоки</a></li>
-                        <li class="nav__item"><a href="software.html" class="nav__link link">Современное ПО</a></li>
-                        <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
-                        <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
-                        <li class="nav__item"><a href="russian_top.html" class="nav__link link nav__link_selected">Топ русских продюсеров</a></li>
-                        <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container hero__inner">
-                <h1 class="hero__heading">История <br>битмейкинга</h1>
-                <nav class="nav hero__nav">
+                <button class="header__menu button--primary button button--primary">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" />
+                    </svg>
+                </button>
+                <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link link">Истоки</a></li>
                         <li class="nav__item"><a href="software.html" class="nav__link link">Современное ПО</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
-                        <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных продюсеров</a></li>
-                        <li class="nav__item"><a href="russian_top.html" class="nav__link link nav__link_selected">Топ русских продюсеров</a></li>
+                        <li class="nav__item"><a href="top.html" class="nav__link link">Топ западных
+                                продюсеров</a></li>
+                        <li class="nav__item"><a href="russian_top.html" class="nav__link link nav__link--selected">Топ
+                                русских
+                                продюсеров</a></li>
                         <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
                     </ul>
                 </nav>
             </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__heading">История<br> битмейкинга</h1>
+                    <nav class="nav hero__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html" class="nav__link link">Истоки</a></li>
+                            <li class="nav__item"><a href="software.html" class="nav__link link">Современное ПО</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link link">О работе</a></li>
+                            <li class="nav__item"><a href="top.html" class="nav__link link">Топ
+                                    западных<br> продюсеров</a></li>
+                            <li class="nav__item"><a href="russian_top.html"
+                                    class="nav__link link nav__link--selected">Топ русских<br>
+                                    продюсеров</a></li>
+                            <li class="nav__item"><a href="examples.html" class="nav__link link">Примеры битов</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </section>
         <section class="top">
             <div class="container">
-                <h2 class="top__heading">Продюсеры XX-XXI веков</h2>
-                <p class="top__text">Около 50 лет битмейкеры пишут музыку разных жанров для разных исполнителей, и за это время было множество продюсеров, которые оставили огромный след в истории своими легендарными работами. Некоторых из них я сейчас представлю.</p>
-                <div class="top__grid">
+                <article class="article">
+                    <h2 class="article__heading">Русские продюсеры XX-XXI веков</h2>
+                    <p class="article__text">Около 50 лет битмейкеры пишут музыку разных жанров для разных исполнителей,
+                        и за это время было множество продюсеров, которые оставили огромный след в истории своими
+                        легендарными работами.</p>
+                </article>
+                <div class="top__cards">
                     <div class="card">
-                        <img src="assets/aarne.jpg" alt="" class="card__image">
-                        <div class="card__inner">
-                            <h3 class="card__heading">Aarne</h3>
-                            <p class="card__text">Aarne – талантливый битмейкер, специализирующийся на создании уникальных и запоминающихся музыкальных битов. Работал с множеством российских исполнителей, таких как Платина, Lil Krystalll и другими, а также с некоторыми западными артистами. . </p>
-                        </div>    
+                        <img src="assets/beatmakers/aarne.jpg" alt="" class="card__image">
+                        <h3 class="card__heading">Aarne</h3>
+                        <p class="card__text">Aarne – талантливый битмейкер, специализирующийся на создании уникальных и
+                            запоминающихся музыкальных битов. Работал с множеством российских исполнителей, таких как
+                            Платина, Lil Krystalll и другими, а также с некоторыми западными артистами. . </p>
                     </div>
                     <div class="card">
-                        <img src="https://debop.ru/uploads/posts/2022-03/big-baby-tape-prizval-fanatov-ne-paritsja-ob-uhode-mirovyh-muzykalnyh-lejblov-novosti-muzyki-1.jpg" alt="" class="card__image">
-                        <div class="card__inner">
-                            <h3 class="card__heading">DJ Tape <br>(Big Baby Tape)</h3>
-                            <p class="card__text">Big Baby Tape – российский рэп-исполнитель с впечатляющим битмейкерским прошлым. Известен не только своим уникальным стилем исполнения, но и умением создавать инновационные музыкальные биты, что делает его одним из выдающихся представителей современной музыкальной сцены.</p>
-                        </div>    
+                        <img src="assets/beatmakers/dj-tape.jpg" alt="" class="card__image">
+                        <h3 class="card__heading">DJ Tape <br>(Big Baby Tape)</h3>
+                        <p class="card__text">Big Baby Tape – российский рэп-исполнитель с впечатляющим битмейкерским
+                            прошлым. Известен не только своим уникальным стилем исполнения, но и умением создавать
+                            инновационные музыкальные биты, что делает его одним из выдающихся представителей
+                            современной музыкальной сцены.</p>
+
                     </div>
                     <div class="card">
-                        <img src="https://artmoskovia.ru/wp-content/uploads/2021/05/slava-marlow-scaled.jpg" alt="" class="card__image">
-                        <div class="card__inner">
-                            <h3 class="card__heading">Slava Marlow</h3>
-                            <p class="card__text">Slava Marlow – российский хип-хоп артист и талантливый битмейкер. Его музыкальное наследие включает в себя не только яркие исполнительские работы, но и влиятельные моменты в создании звучания, что подчеркивает его многогранный вклад в мир музыки. Свою первую популярность получил благодаря коллаборации с <span class="spoiler">Моргенштерном</span>.</p>
-                        </div>    
+                        <img src="assets/beatmakers/slava-marlow.jpg" alt="" class="card__image">
+                        <h3 class="card__heading">Slava Marlow</h3>
+                        <p class="card__text">Slava Marlow – российский хип-хоп артист и талантливый битмейкер. Его
+                            музыкальное наследие включает в себя не только яркие исполнительские работы, но и
+                            влиятельные моменты в создании звучания, что подчеркивает его многогранный вклад в мир
+                            музыки. Свою первую популярность получил благодаря коллаборации с <span
+                                class="spoiler spoiler--secondary">Моргенштерном</span>.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <div id="morgenshtern-popup" class="popup popup--right">
+        <h3 class="popup__heading">
+            <svg class="popup__icon icon" viewBox="0 -960 960 960">
+                <path
+                    d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z" />
+            </svg>
+            Внимание!
+            <button class="popup__close button button--icon">
+                <svg class="popup__icon icon" viewBox="0 -960 960 960">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </button>
+        </h3>
+        <p class="popup__text">В настоящее время Алишеер Тагиирович Моргенштерн признан иноагентом на территории
+            Росийской Федирации.</p>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <h2 class="footer__heading">Contact us on our socials!</h2>
+                <div class="footer__copyright">
+                    Copyright &copy; 2024 <a class="link" href="https://github.com/MichaelRayven">Michael Ray</a> and <a class="link" href="https://www.youtube.com/@winded_drop_dat">Windedberet</a>. All rights reserved.
+                </div>
+                <div class="footer__socials">
+                    <div class="socials__inner">
+                        <div class="socials__item">
+                            <h3 class="socials__person">Windedberet</h3>
+                            <p class="socials__position">Sound Producer</p>
+                            <h4 class="socials__heading">Socials:</h4>
+                            <ul class="socials__list">
+                                <li><a class="link" href="https://t.me/@windedberet"><img src="assets/icons/icon-telegram.svg" class="icon" alt="">Telegram</a></li>
+                                <li><a class="link" href="https://vk.com/windedberet_beats"><img src="assets/icons/icon-vk.svg" class="icon" alt="">Vkontakte</a></li>
+                                <li><a class="link align-center" href="https://vk.com/windedberet_beats"><img src="assets/icons/icon-youtube.svg" class="icon" alt="">YouTube</a></li>
+                            </ul>
+                        </div>
+                        <div class="socials__item">
+                            <h3 class="socials__person">Michael Rayven</h3>
+                            <p class="socials__position">Web Developer</p>
+                            <h4 class="socials__heading">Socials:</h4>
+                            <ul class="socials__list">
+                                <li><a class="link" href="https://t.me/@theitsastels"><img src="assets/icons/icon-telegram.svg" class="icon" alt="">Telegram</a></li>
+                                <li><a class="link" href="https://github.com/MichaelRayven"><img src="assets/icons/icon-github.svg" class="icon" alt="">Github</a></li>
+                                <li><a class="link" href="mailto:themikerayven@gmail.com?subject=Email from Beatmaking.com"><img src="assets/icons/icon-gmail.svg" class="icon" alt="">Gmail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

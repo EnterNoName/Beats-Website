@@ -22,6 +22,31 @@
     }
 }
 
+@keyframes fade-out-left {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+}
+
+@keyframes fade-out-right {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+}
+
+
 @keyframes pop-in {
     from {
         opacity: 0;
