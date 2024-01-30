@@ -30,7 +30,7 @@ document.addEventListener("scroll", () => {
     const scrollTop = document.scrollingElement.scrollTop
     const windowHeight = window.innerHeight
 
-    if ((scrollTop + windowHeight) > (topCards.offsetTop + topCards.clientHeight / 3) != isCards) {
+    if ((scrollTop + windowHeight) > (topCards.offsetTop + Math.min(topCards.clientHeight / 3, 100)) != isCards) {
         isCards = !isCards
         topCards.classList.toggle('show')
     }
