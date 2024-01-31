@@ -70,11 +70,6 @@ html {
     --color-secondary-700: #cc5429;
     --color-secondary-800: #b34a24;
     --color-secondary-900: #993f1f;
-
-    --color-vk: #345E90 ;
-    --color-telegram: #1B92D1;
-    --color-youtube: #F61C0D;
-    --color-beatstars: #F52626;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -815,71 +810,72 @@ html {
 }
 
 .icon--logo {
-    background-color: var(--color-text);
-    -webkit-mask: url(../assets/icons/icon-logo.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-logo.svg) no-repeat center/cover;
+    background: url("../assets/icons/black/icon-logo.svg") no-repeat center/cover;
 }
 
 .icon--github {
-    background-color: var(--color-text);
-    -webkit-mask: url(../assets/icons/icon-github.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-github.svg) no-repeat center/cover;
+    background: url("../assets/icons/black/icon-github.svg") no-repeat center/cover;
 }
 
 .icon--telegram {
-    background-color: var(--color-telegram);
-    -webkit-mask: url(../assets/icons/icon-telegram.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-telegram.svg) no-repeat center/cover;
+    background: url("../assets/icons/icon-telegram.svg") no-repeat center/cover;
 }
 
 .icon--vk {
-    background-color: var(--color-vk);
-    -webkit-mask: url(../assets/icons/icon-vk.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-vk.svg) no-repeat center/cover;
+    background: url("../assets/icons/icon-vk.svg") no-repeat center/cover;
 }
 
 .icon--youtube {
-    background-color: var(--color-youtube);
-    -webkit-mask: url(../assets/icons/icon-youtube.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-youtube.svg) no-repeat center/cover;
+    background: url("../assets/icons/icon-youtube.svg") no-repeat center/cover;
 }
 
 .icon--beatstars {
-    background-color: var(--color-beatstars);
-    -webkit-mask: url(../assets/icons/icon-beatstars.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-beatstars.svg) no-repeat center/cover;
+    background: url("../assets/icons/icon-beatstars.svg") no-repeat center/cover;
 }
 
 .icon--close {
-    background-color: var(--color-text);
-    -webkit-mask: url(../assets/icons/icon-close.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-close.svg) no-repeat center/cover;
+    background: url("../assets/icons/white/icon-close.svg") no-repeat center/cover;
+}
+
+.icon--close-accent {
+    background: url("../assets/icons/accent/icon-close.svg") no-repeat center/cover;
 }
 
 .icon--menu {
-    background-color: var(--color-text);
-    -webkit-mask: url(../assets/icons/icon-menu.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-menu.svg) no-repeat center/cover;
+    background: url("../assets/icons/white/icon-menu.svg") no-repeat center/cover;
 }
 
 .icon--warning {
-    background-color: var(--color-text);
-    -webkit-mask: url(../assets/icons/icon-warning.svg) no-repeat center/cover;
-    mask: url(../assets/icons/icon-warning.svg) no-repeat center/cover;
+    background: url("../assets/icons/black/icon-warning.svg") no-repeat center/cover;
+}
+
+.icon--warning-accent {
+    background: url("../assets/icons/accent/icon-warning.svg") no-repeat center/cover;
 }
 
 .icon--gmail {
     background: url("../assets/icons/icon-gmail.svg") no-repeat center/cover;
 }
 
-.icon--color-text {
-    background-color: var(--color-text);
+@media (prefers-color-scheme: dark) {
+    .icon--logo {
+        background: url("../assets/icons/white/icon-logo.svg") no-repeat center/cover;
+    }
+
+    .icon--close {
+        background: url("../assets/icons/black/icon-close.svg") no-repeat center/cover;
+    }
+    
+    .icon--menu {
+        background: url("../assets/icons/black/icon-menu.svg") no-repeat center/cover;
+    }
+    
+    .icon--warning {
+        background: url("../assets/icons/white/icon-warning.svg") no-repeat center/cover;
+    }
+
+    .icon--github {
+        background: url("../assets/icons/white/icon-github.svg") no-repeat center/cover;
+    }
 }
 
-.icon--color-background {
-    background-color: var(--color-background);
-}
-
-.icon--color-secondary-500 {
-    background-color: var(--color-secondary-500);
-}
